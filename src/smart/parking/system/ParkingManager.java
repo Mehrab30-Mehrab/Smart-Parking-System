@@ -22,7 +22,7 @@ public class ParkingManager {
         slots = new ArrayList<>();
         activeTickets = new HashMap<>();
         
-        for(int i = 0; i <= totalSlots; i++){
+        for(int i = 1; i <= totalSlots; i++){
             slots.add(new ParkingSlot(i));
         }
         
@@ -62,7 +62,7 @@ public class ParkingManager {
         
         activeTickets.put(ticketId, ticket);
         
-        System.out.println("Vehicle Parked at slot: "+Slot.getSlotId);
+        System.out.println("Vehicle Parked at slot: "+Slot.getSlotId());
         
         return ticket;
         
